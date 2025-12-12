@@ -28,7 +28,7 @@
   <section class="hero">
     <video autoplay muted loop class="hero-video">
       <source src="media/watermarked_preview.mp4" type="video/mp4">
-      <!-- the watermark could not be removed without damaging the video, that is why i left it as it is.-->
+      <!-- the watermark couldnt be removed without damaging the video, that is why i left it as it is.-->
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-text">
@@ -40,58 +40,76 @@
       <div class="scroll-arrow"></div>
     </div>
   </section>
+
   <!-- about us -->
-  <main class="content">
-    <section class="about">
-      <div class="section-header">
-        <h2 class="section-title">Our Story</h2>
-        <div class="title-underline"></div>
+  <section class="about">
+  <div class="section-header">
+    <h2 class="section-title">Our Story</h2>
+    <div class="title-underline"></div>
+  </div>
+
+  <div class="about-content">
+    
+    <div class="about-card">
+      <div class="card-header">
+        <div class="card-icon">🌱</div>
+        <h3>Our Beginnings</h3>
       </div>
-
-      <div class="about-content">
-        <div class="about-item ">
-          <h3>Our Beginnings</h3>
-          <p> In 1987, tucked inside a converted 19th-century brick textile mill on the banks of
-            the River Sheger, our family fired up a single antique stone melangeur and began a
-            quiet revolution in Ethiopian chocolate. What started as a weekend hobby—roasting
-            small batches of indigenous white cacao beans that grew wild in the southwestern
-            highlands—quickly attracted the noses and imaginations of neighbors who followed the warm,
-            nutty aroma through the mill’s iron gates. Within a year, the hobby outgrew the kitchen,
-            and the Chocolate Factory was officially born, built on the simple promise that every bar
-            would reflect the land it came from, the hands that tended it, and the community that
-            celebrated it. </p>
-        </div>
-
-        <div class="about-item">
-          <h3>Bean-to-Bar Craftsmanship</h3>
-          <p> Today the same mill hums with expanded wings, solar panels, and a zero-waste water system,
-            yet we still hand-sort every sack of beans, stone-grind for 72 hours in small batches, and
-            age our chocolate for a full moon cycle before tempering. Our cacao travels only 480 km from
-            forest to factory—one of the shortest “food miles” in the global chocolate world—allowing us
-            to pay growers above fair-trade premiums while the beans are still warm from the sun.
-            Roasting profiles are tuned to Ethiopia’s unique varietals: bright yellow Amelonado for
-            citrus notes, rare scarlet Criollo for honeyed finish, and a purple-forastero hybrid that
-            lends deep red-fruit undertones. Each recipe is tested, tasted, and voted on by our
-            42-person worker cooperative (half of whom are women who climbed from pod cleaners to head
-            chocolate makers), ensuring that the chocolate you unwrap carries the soul of the community
-            inside every square. </p>
-        </div>
-
-        <div class="about-item ">
-          <h3>Sweet Impact</h3>
-          <p> Beyond flavor, the factory is a living classroom: local schoolchildren visit to grind
-            their own mini bars, farmers learn post-harvest techniques in our fermentation courtyard,
-            and every October we host the “Cacao Carnival,” where 10 % of annual profits are reinvested
-            into reforesting riverbanks with native shade trees. Our packaging is printed on reclaimed
-            coffee-husk paper, our waste cacao husks fuel the boilers, and the steam that once powered
-            textile looms now warms greenhouse tunnels that grow vanilla and cardamom for next season’s
-            infusions. Step inside any weekday between 9 and 5 and you’ll hear laughter mixing with the
-            slap of cooling chocolate on marble, smell toffee and jasmine in the air, and leave with
-            a square that tells the story of Ethiopian soil, Ethiopian hands, and a tiny riverside
-            factory that believes business can be the most delicious force for good. </p>
+      <div class="card-text">
+        <p>
+          In 1987, tucked inside a converted 19th-century brick textile mill on the banks of
+          the River Sheger, our family fired up a single antique stone melangeur and began a
+          quiet revolution in Ethiopian chocolate...
+        </p>
+        <div class="more-content"> 
+          <p>What started as a weekend hobby—roasting small batches of indigenous white cacao beans that grew wild in the southwestern highlands—quickly attracted the noses and imaginations of neighbors who followed the warm, nutty aroma through the mill's iron gates.</p>
+          <p>Within a year, the hobby outgrew the kitchen, and the Chocolate Factory was officially born, built on the simple promise that every bar would reflect the land it came from, the hands that tended it, and the community that celebrated it.</p>
         </div>
       </div>
-    </section>
+      <button class="more-btn">Read More</button><!-- these buttons doesnt work because it needs JS to function -->
+    </div>
+
+
+    <div class="about-card">
+      <div class="card-header">
+        <div class="card-icon">🔥</div>
+        <h3>Bean-to-Bar Craftsmanship</h3>
+      </div>
+      <div class="card-text">
+        <p>
+          Today the same mill hums with expanded wings, solar panels, and a zero-waste water system,
+          yet we still hand-sort every sack of beans, stone-grind for 72 hours in small batches...
+        </p>
+        <div class="more-content">
+          <p>...and age our chocolate for a full moon cycle before tempering. Our cacao travels only 480 km from forest to factory—one of the shortest "food miles" in the global chocolate world—allowing us to pay growers above fair-trade premiums while the beans are still warm from the sun.</p>
+          <p>Roasting profiles are tuned to Ethiopia's unique varietals: bright yellow Amelonado for citrus notes, rare scarlet Criollo for honeyed finish, and a purple-forastero hybrid that lends deep red-fruit undertones.</p>
+          <p>Each recipe is tested, tasted, and voted on by our 42-person worker cooperative (half of whom are women who climbed from pod cleaners to head chocolate makers), ensuring that the chocolate you unwrap carries the soul of the community inside every square.</p>
+        </div>
+      </div>
+      <button class="more-btn">Read More</button>
+    </div>
+
+
+    <div class="about-card">
+      <div class="card-header">
+        <div class="card-icon">❤️</div>
+        <h3>Sweet Impact</h3>
+      </div>
+      <div class="card-text">
+        <p>
+          Beyond flavor, the factory is a living classroom: local schoolchildren visit to grind
+          their own mini bars, farmers learn post-harvest techniques...
+        </p>
+        <div class="more-content">
+          <p>...in our fermentation courtyard, and every October we host the "Cacao Carnival," where 10% of annual profits are reinvested into reforesting riverbanks with native shade trees.</p>
+          <p>Our packaging is printed on reclaimed coffee-husk paper, our waste cacao husks fuel the boilers, and the steam that once powered textile looms now warms greenhouse tunnels that grow vanilla and cardamom for next season's infusions.</p>
+          <p>Step inside any weekday between 9 and 5 and you'll hear laughter mixing with the slap of cooling chocolate on marble, smell toffee and jasmine in the air, and leave with a square that tells the story of Ethiopian soil, Ethiopian hands, and a tiny riverside factory that believes business can be the most delicious force for good.</p>
+        </div>
+      </div>
+      <button class="more-btn">Read More</button>
+    </div>
+  </div>
+</section>
 
     <!-- why us -->
     <section class="why-us">

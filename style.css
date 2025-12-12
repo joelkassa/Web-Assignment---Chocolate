@@ -176,6 +176,7 @@ h1, h2, h3, h4 {
   transform: rotate(45deg);
 }
 /* about us*/
+
 .content {
   padding-top: 80px;
 }
@@ -199,37 +200,87 @@ h1, h2, h3, h4 {
   border-radius: 2px;
 }
 
-.about {
-  padding: 5rem 5%;
-}
-
-.about-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-  margin-top: 3rem;
-}
-
-.about-item {
-  text-align: center;
-  padding: 2rem;
-  background: var(--white);
+.about-card {
+  background: white;
   border-radius: 20px;
-  box-shadow: var(--shadow);
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.about-item:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--shadow-hover);
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
 
-
-.about-item h3 {
+.card-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #8b4513, #d2691e);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: white;
+}
+
+.card-header h3 {
+  color: #8b4513;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.card-text {
+  position: relative;
+}
+
+.card-text p {
+  color: #2c1810;
+  line-height: 1.6;
   margin-bottom: 1rem;
+}
+
+.more-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  opacity: 0;
+}
+
+.more-content p {
+  color: #6b4423;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.more-btn {
+  background: #8b4513;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.more-btn:hover {
+  background: #ff6b35;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
 }
 
 /* why us */
