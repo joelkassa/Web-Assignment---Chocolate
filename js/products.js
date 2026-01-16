@@ -88,3 +88,7 @@ quickAdd.addEventListener('click',()=>{
   if(kg>0) addToCart(currentProduct,kg);
   quickModal.classList.remove('show');
 });
+
+quickModal.addEventListener('click',e=>{
+  if(e.target===quickModal) quickModal.classList.remove('show');
+});
