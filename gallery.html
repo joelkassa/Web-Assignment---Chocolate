@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – LUXUS CHOCOLATE</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="logo">
+      <span class="logo-icon">🍫</span> LUXUS CHOCOLATE
+    </div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="gallery.html" class="nav-link active">Gallery</a>
+      <a href="contact.html" class="nav-link">Order</a>
+    </nav>
+    <div class="nav-buttons">
+      <button id="themeToggle" class="theme-toggle">🌙</button>
+
+      <div class="cart-icon" id="cartIcon">
+        🛒<span id="cartBadge">0</span>
+        <div class="cart-paper" id="cartPaper">
+          <div class="cart-strings"></div>
+          <div class="cart-content">
+            <h4>Cart</h4>
+            <ul id="cartList"></ul>
+            <p>Total: <span id="cartTotal">0 kg – ETB 0</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="page-header">
+      <h1 class="page-title">Gallery</h1>
+    </div>
+
+
+    <div class="gallery-filter">
+      <button data-filter="all" class="filter-btn active">All</button>
+      <button data-filter="beans" class="filter-btn">Beans</button>
+      <button data-filter="process" class="filter-btn">Process</button>
+      <button data-filter="products" class="filter-btn">Products</button>
+      <button data-filter="people" class="filter-btn">People</button>
+    </div>
+
+
+    <div class="gallery-grid" id="galleryGrid">
+
+      <div class="gallery-item" data-category="beans">
+        <img src="media/cocoa.jpg" alt="Cacao beans">
+      </div>
+      <div class="gallery-item" data-category="beans">
+        <img src="media/cocoa pods.jpg" alt="Cacao pods">
+      </div>
+
+
+      <div class="gallery-item" data-category="process">
+        <img src="media/roasting cocoa.jpg" alt="Roasting">
+      </div>
+      <div class="gallery-item" data-category="process">
+        <img src="media/winnowing.jpg" alt="Winnowing">
+      </div>
+
+
+      <div class="gallery-item" data-category="products">
+        <img src="media/dark.jpg" alt="Dark bar">
+      </div>
+      <div class="gallery-item" data-category="products">
+        <img src="media/milk.jpg" alt="Milk bar">
+      </div>
+
+
+      <div class="gallery-item" data-category="people">
+        <img src="media/cocoa farm.jpg" alt="Farmer">
+      </div>
+      <div class="gallery-item" data-category="people">
+        <img src="media/team.jpg" alt="Team">
+      </div>
+    </div>
+
+
+    <div class="upload-box">
+      <h3>Share your chocolate moment</h3>
+      <input type="file" id="uploadInput" accept="image/*">
+      <div id="uploadPreview"></div>
+      <button id="uploadBtn">Submit</button>
+    </div>
+  </main>
+
+
+
+  <button id="backTop" class="back-top">↑</button>
+
+    <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Luxus Chocolate</h4>
+        <p>Artisan chocolate makers since 1987</p>
+      </div>
+      <div class="footer-section">
+        <p>&copy; 2025 Luxus Chocolate. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
