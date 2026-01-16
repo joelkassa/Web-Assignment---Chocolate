@@ -1,241 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Products – LUXUS CHOCOLATE</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products – LUXUS CHOCOLATE</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="navbar" id="navbar">
-    <div class="logo">
-      <span class="logo-icon">🍫</span> LUXUS CHOCOLATE
-    </div>
-    <nav>
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="products.html" class="nav-link active">Products</a>
-      <a href="gallery.html" class="nav-link">Gallery</a>
-      <a href="contact.html" class="nav-link">Order</a>
-    </nav>
-    <div class="nav-buttons">
-      <button id="themeToggle" class="theme-toggle">🌙</button>
-
-      <div class="cart-icon" id="cartIcon">
-        🛒<span id="cartBadge">0</span>
-        <div class="cart-paper" id="cartPaper">
-          <div class="cart-strings"></div>
-          <div class="cart-content">
-            <h4>Cart</h4>
-            <ul id="cartList"></ul>
-            <p>Total: <span id="cartTotal">0 kg – ETB 0</span></p>
-          </div>
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <span class="logo-icon">🍫</span> LUXUS CHOCOLATE
         </div>
-      </div>
-    </div>
-  </header>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link active">Products</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Order</a>
+        </nav>
+        <div class="nav-buttons">
+            <button id="themeToggle" class="theme-toggle">🌙</button>
 
-  <main class="content">
-    <div class="page-header">
-      <h1 class="page-title">Our Artisan Collection</h1>
-      <p class="page-subtitle">Handcrafted chocolate, from bean to bar</p>
-    </div>
-
-
-    <section class="products-grid">
-
-      <div class="product-card" data-name="Dark Chocolate" data-price="2500">
-        <div class="product-image">
-          <img src="media/dark.jpg" alt="Dark Chocolate">
-          <div class="product-overlay">
-            <span class="product-price">ETB 2,500/kg</span>
-          </div>
-
-          <div class="sprite360" title="Drag to rotate"></div>
+            <div class="cart-icon" id="cartIcon">
+                🛒<span id="cartBadge">0</span>
+                <div class="cart-paper" id="cartPaper">
+                    <div class="cart-strings"></div>
+                    <div class="cart-content">
+                        <h4>Cart</h4>
+                        <ul id="cartList"></ul>
+                        <p>Total: <span id="cartTotal">0 kg – ETB 0</span></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="product-info">
-          <h3>Dark Chocolate</h3>
-          <p class="product-description">Rich, intense flavor with notes of red fruit</p>
-          <div class="product-details">
-            <span class="ingredient">Cacao, cane sugar, cocoa butter</span>
-            <div class="nutrition-info">
-              <span>580 kcal</span>
-              <span>22g fat</span>
-              <span>8g sugar</span>
+    </header>
+
+    <main class="content">
+        <div class="page-header">
+            <h1 class="page-title">Our Artisan Collection</h1>
+            <p class="page-subtitle">Handcrafted chocolate, from bean to bar</p>
+        </div>
+
+
+        <section class="products-grid">
+
+            <div class="product-card" data-name="Dark Chocolate" data-price="2500">
+                <div class="product-image">
+                    <img src="media/dark.jpg" alt="Dark Chocolate">
+                    <div class="product-overlay">
+                        <span class="product-price">ETB 2,500/kg</span>
+                    </div>
+
+                    <div class="sprite360" title="Drag to rotate"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Dark Chocolate</h3>
+                    <p class="product-description">Rich, intense flavor with notes of red fruit</p>
+                    <div class="product-details">
+                        <span class="ingredient">Cacao, cane sugar, cocoa butter</span>
+                        <div class="nutrition-info">
+                            <span>580 kcal</span>
+                            <span>22g fat</span>
+                            <span>8g sugar</span>
+                        </div>
+
+                        <canvas class="radar-canvas" data-flavours="80,60,90,70,50"></canvas>
+                    </div>
+
+                    <div class="product-calc">
+                        <input type="number" class="qty" min="0" step="0.1" placeholder="0">
+                        <span class="unit">kg</span>
+                        <span class="subtotal">ETB 0</span>
+                    </div>
+                    <button class="add-cart-btn">Add to cart</button>
+                    <button class="quick-view-btn">Quick view</button>
+                </div>
             </div>
 
-            <canvas class="radar-canvas" data-flavours="80,60,90,70,50"></canvas>
-          </div>
 
-          <div class="product-calc">
-            <input type="number" class="qty" min="0" step="0.1" placeholder="0">
-            <span class="unit">kg</span>
-            <span class="subtotal">ETB 0</span>
-          </div>
-          <button class="add-cart-btn">Add to cart</button>
-          <button class="quick-view-btn">Quick view</button>
-        </div>
-      </div>
-
-
-      <div class="product-card" data-name="Almond Chocolate" data-price="2500">
-        <div class="product-image">
-          <img src="media/almond.jpg" alt="Almond Chocolate">
-          <div class="product-overlay">
-            <span class="product-price">ETB 2,500/kg</span>
-          </div>
-          <div class="sprite360" title="Drag to rotate"></div>
-        </div>
-        <div class="product-info">
-          <h3>Almond Chocolate</h3>
-          <p class="product-description">Crunchy roasted almonds in smooth dark chocolate</p>
-          <div class="product-details">
-            <span class="ingredient">Dark chocolate, roasted almond pieces</span>
-            <div class="nutrition-info">
-              <span>580 kcal</span>
-              <span>30g fat</span>
-              <span>10g sugar</span>
+            <div class="product-card" data-name="Almond Chocolate" data-price="2500">
+                <div class="product-image">
+                    <img src="media/almond.jpg" alt="Almond Chocolate">
+                    <div class="product-overlay">
+                        <span class="product-price">ETB 2,500/kg</span>
+                    </div>
+                    <div class="sprite360" title="Drag to rotate"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Almond Chocolate</h3>
+                    <p class="product-description">Crunchy roasted almonds in smooth dark chocolate</p>
+                    <div class="product-details">
+                        <span class="ingredient">Dark chocolate, roasted almond pieces</span>
+                        <div class="nutrition-info">
+                            <span>580 kcal</span>
+                            <span>30g fat</span>
+                            <span>10g sugar</span>
+                        </div>
+                        <canvas class="radar-canvas" data-flavours="70,50,85,65,60"></canvas>
+                    </div>
+                    <div class="product-calc">
+                        <input type="number" class="qty" min="0" step="0.1" placeholder="0">
+                        <span class="unit">kg</span>
+                        <span class="subtotal">ETB 0</span>
+                    </div>
+                    <button class="add-cart-btn">Add to cart</button>
+                    <button class="quick-view-btn">Quick view</button>
+                </div>
             </div>
-            <canvas class="radar-canvas" data-flavours="70,50,85,65,60"></canvas>
-          </div>
-          <div class="product-calc">
-            <input type="number" class="qty" min="0" step="0.1" placeholder="0">
-            <span class="unit">kg</span>
-            <span class="subtotal">ETB 0</span>
-          </div>
-          <button class="add-cart-btn">Add to cart</button>
-          <button class="quick-view-btn">Quick view</button>
-        </div>
-      </div>
 
 
-      <div class="product-card" data-name="Strawberry Chocolate" data-price="2500">
-        <div class="product-image">
-          <img src="media/strawberry.jpg" alt="Strawberry Chocolate">
-          <div class="product-overlay">
-            <span class="product-price">ETB 2,500/kg</span>
-          </div>
-          <div class="sprite360" title="Drag to rotate"></div>
-        </div>
-        <div class="product-info">
-          <h3>Strawberry Chocolate</h3>
-          <p class="product-description">Tangy strawberry bits in creamy white chocolate</p>
-          <div class="product-details">
-            <span class="ingredient">White chocolate, freeze-dried strawberry bits</span>
-            <div class="nutrition-info">
-              <span>580 kcal</span>
-              <span>20g fat</span>
-              <span>7g sugar</span>
+            <div class="product-card" data-name="Strawberry Chocolate" data-price="2500">
+                <div class="product-image">
+                    <img src="media/strawberry.jpg" alt="Strawberry Chocolate">
+                    <div class="product-overlay">
+                        <span class="product-price">ETB 2,500/kg</span>
+                    </div>
+                    <div class="sprite360" title="Drag to rotate"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Strawberry Chocolate</h3>
+                    <p class="product-description">Tangy strawberry bits in creamy white chocolate</p>
+                    <div class="product-details">
+                        <span class="ingredient">White chocolate, freeze-dried strawberry bits</span>
+                        <div class="nutrition-info">
+                            <span>580 kcal</span>
+                            <span>20g fat</span>
+                            <span>7g sugar</span>
+                        </div>
+                        <canvas class="radar-canvas" data-flavours="50,90,40,85,45"></canvas>
+                    </div>
+                    <div class="product-calc">
+                        <input type="number" class="qty" min="0" step="0.1" placeholder="0">
+                        <span class="unit">kg</span>
+                        <span class="subtotal">ETB 0</span>
+                    </div>
+                    <button class="add-cart-btn">Add to cart</button>
+                    <button class="quick-view-btn">Quick view</button>
+                </div>
             </div>
-            <canvas class="radar-canvas" data-flavours="50,90,40,85,45"></canvas>
-          </div>
-          <div class="product-calc">
-            <input type="number" class="qty" min="0" step="0.1" placeholder="0">
-            <span class="unit">kg</span>
-            <span class="subtotal">ETB 0</span>
-          </div>
-          <button class="add-cart-btn">Add to cart</button>
-          <button class="quick-view-btn">Quick view</button>
-        </div>
-      </div>
 
 
-      <div class="product-card" data-name="Milk Chocolate" data-price="2500">
-        <div class="product-image">
-          <img src="media/milk.jpg" alt="Milk Chocolate">
-          <div class="product-overlay">
-            <span class="product-price">ETB 2,500/kg</span>
-          </div>
-          <div class="sprite360" title="Drag to rotate"></div>
-        </div>
-        <div class="product-info">
-          <h3>Milk Chocolate</h3>
-          <p class="product-description">Creamy, smooth classic milk chocolate</p>
-          <div class="product-details">
-            <span class="ingredient">Cane sugar, whole-milk powder, cocoa butter</span>
-            <div class="nutrition-info">
-              <span>580 kcal</span>
-              <span>24g fat</span>
-              <span>10g sugar</span>
+            <div class="product-card" data-name="Milk Chocolate" data-price="2500">
+                <div class="product-image">
+                    <img src="media/milk.jpg" alt="Milk Chocolate">
+                    <div class="product-overlay">
+                        <span class="product-price">ETB 2,500/kg</span>
+                    </div>
+                    <div class="sprite360" title="Drag to rotate"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Milk Chocolate</h3>
+                    <p class="product-description">Creamy, smooth classic milk chocolate</p>
+                    <div class="product-details">
+                        <span class="ingredient">Cane sugar, whole-milk powder, cocoa butter</span>
+                        <div class="nutrition-info">
+                            <span>580 kcal</span>
+                            <span>24g fat</span>
+                            <span>10g sugar</span>
+                        </div>
+                        <canvas class="radar-canvas" data-flavours="65,55,75,80,55"></canvas>
+                    </div>
+                    <div class="product-calc">
+                        <input type="number" class="qty" min="0" step="0.1" placeholder="0">
+                        <span class="unit">kg</span>
+                        <span class="subtotal">ETB 0</span>
+                    </div>
+                    <button class="add-cart-btn">Add to cart</button>
+                    <button class="quick-view-btn">Quick view</button>
+                </div>
             </div>
-            <canvas class="radar-canvas" data-flavours="65,55,75,80,55"></canvas>
-          </div>
-          <div class="product-calc">
-            <input type="number" class="qty" min="0" step="0.1" placeholder="0">
-            <span class="unit">kg</span>
-            <span class="subtotal">ETB 0</span>
-          </div>
-          <button class="add-cart-btn">Add to cart</button>
-          <button class="quick-view-btn">Quick view</button>
-        </div>
-      </div>
 
 
-      <div class="product-card" data-name="Peanut Chocolate" data-price="2500">
-        <div class="product-image">
-          <img src="media/peanut.jpg" alt="Peanut Chocolate">
-          <div class="product-overlay">
-            <span class="product-price">ETB 2,500/kg</span>
-          </div>
-          <div class="sprite360" title="Drag to rotate"></div>
-        </div>
-        <div class="product-info">
-          <h3>Peanut Chocolate</h3>
-          <p class="product-description">Nutty perfection with premium peanuts</p>
-          <div class="product-details">
-            <span class="ingredient">Cane sugar, milk, cocoa butter, peanut</span>
-            <div class="nutrition-info">
-              <span>580 kcal</span>
-              <span>24g fat</span>
-              <span>10g sugar</span>
+            <div class="product-card" data-name="Peanut Chocolate" data-price="2500">
+                <div class="product-image">
+                    <img src="media/peanut.jpg" alt="Peanut Chocolate">
+                    <div class="product-overlay">
+                        <span class="product-price">ETB 2,500/kg</span>
+                    </div>
+                    <div class="sprite360" title="Drag to rotate"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Peanut Chocolate</h3>
+                    <p class="product-description">Nutty perfection with premium peanuts</p>
+                    <div class="product-details">
+                        <span class="ingredient">Cane sugar, milk, cocoa butter, peanut</span>
+                        <div class="nutrition-info">
+                            <span>580 kcal</span>
+                            <span>24g fat</span>
+                            <span>10g sugar</span>
+                        </div>
+                        <canvas class="radar-canvas" data-flavours="85,45,80,70,65"></canvas>
+                    </div>
+                    <div class="product-calc">
+                        <input type="number" class="qty" min="0" step="0.1" placeholder="0">
+                        <span class="unit">kg</span>
+                        <span class="subtotal">ETB 0</span>
+                    </div>
+                    <button class="add-cart-btn">Add to cart</button>
+                    <button class="quick-view-btn">Quick view</button>
+                </div>
             </div>
-            <canvas class="radar-canvas" data-flavours="85,45,80,70,65"></canvas>
-          </div>
-          <div class="product-calc">
-            <input type="number" class="qty" min="0" step="0.1" placeholder="0">
-            <span class="unit">kg</span>
-            <span class="subtotal">ETB 0</span>
-          </div>
-          <button class="add-cart-btn">Add to cart</button>
-          <button class="quick-view-btn">Quick view</button>
+        </section>
+
+
+        <div id="quickView" class="quick-view-modal">
+            <div class="quick-box">
+                <span id="closeQuick" class="close-quick">&times;</span>
+                <img id="quickImg" src="" alt="">
+                <h3 id="quickTitle"></h3>
+                <p id="quickDesc"></p>
+                <p id="quickIng"></p>
+                <div class="nutrition-info" id="quickNutri"></div>
+                <div class="quick-buy">
+                    <input type="number" id="quickQty" min="0.1" step="0.1" value="1">
+                    <button id="quickAdd">Add to cart</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </main>
 
 
-    <div id="quickView" class="quick-view-modal">
-      <div class="quick-box">
-        <span id="closeQuick" class="close-quick">&times;</span>
-        <img id="quickImg" src="" alt="">
-        <h3 id="quickTitle"></h3>
-        <p id="quickDesc"></p>
-        <p id="quickIng"></p>
-        <div class="nutrition-info" id="quickNutri"></div>
-        <div class="quick-buy">
-          <input type="number" id="quickQty" min="0.1" step="0.1" value="1">
-          <button id="quickAdd">Add to cart</button>
-        </div>
-      </div>
-    </div>
-  </main>
-
-
-  <button id="backTop" class="back-top">↑</button>
+    <button id="backTop" class="back-top">↑</button>
 
     <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Luxus Chocolate</h4>
-        <p>Artisan chocolate makers since 1987</p>
-      </div>
-      <div class="footer-section">
-        <p>&copy; 2025 Luxus Chocolate. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Luxus Chocolate</h4>
+                <p>Artisan chocolate makers since 1987</p>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2025 Luxus Chocolate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/products.js" defer></script>
 
 
 </body>
+
 </html>
