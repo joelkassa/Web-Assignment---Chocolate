@@ -1,4 +1,3 @@
-
 const navbar=document.getElementById('navbar');
 window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>80));
 
@@ -114,4 +113,17 @@ const aboutCards=document.querySelectorAll('.about-card');
 window.addEventListener('scroll',()=>{
   const offset=window.pageYOffset;
   aboutCards.forEach((c,i)=>{c.style.transform=`translateY(${offset*.02*(i+1)}px)`});
+});
+
+
+document.querySelectorAll('.more-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const card=btn.closest('.about-card');
+    const extra=card.querySelector('.more-content');
+    const isOpen=extra.style.maxHeight && extra.style.maxHeight!=='0px';
+
+    extra.style.maxHeight=isOpen?'0px':extra.scrollHeight+'px';
+    extra.style.opacity=isOpen?'0':'1';
+    btn.textContent=isOpen?'Read More':'Read Less';
+  });
 });
